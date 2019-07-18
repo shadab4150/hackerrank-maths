@@ -1,12 +1,14 @@
 """"
 https://www.hackerrank.com/challenges/best-divisor/problem
 """
+"""""
 Kristen loves playing with and comparing numbers. 
 She thinks that if she takes two different positive numbers, the one whose digits sum to a larger number is better than the other. 
 If the sum of digits is equal for both numbers, then she thinks the smaller number is better. 
 For example, Kristen thinks that 13 is better than 31 and that 12 is better than 11 .
 
-Given an integer,N , can you find the divisor of N that Kristin will consider to be the best?
+Given an integer, N , can you find the divisor of N that Kristin will consider to be the best?
+"""""
 """""
 constraints 1<n<10^5
 """"""
@@ -46,3 +48,8 @@ if len(arr4)==0:
     print(max(arr2))
 else:
     print(max(max(arr4),max(arr2)))
+
+#python one liner time comp O(n)
+
+n=int(input())
+print(max((d for d in range(1, n+1) if n%d == 0), key=lambda x: sum(map(int, str(x)))))
