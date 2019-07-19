@@ -27,7 +27,7 @@ Total number of routes from T1 to Tn modulo 1234567
 
 """"""
 
-#python 3
+# python 3
 
 
 for i in range(int(input())):
