@@ -24,7 +24,17 @@ The grid grows upwards forever!
 Your task is to find the integer in C th column in R th row of the grid.
 
 """"
+#python 3 Time Complexity O(1)
 
+r,c=[int(x) for x in input().split()]
+
+if r%2==0:   # If Even Row Means Odd number
+    r=(r//2)-1
+    print((r*10)+2*(c-1)+1)
+
+else:         # If odd row means even numbers
+    r=(r//2)
+    print((r*10)+2*(c-1)) 
 
 
 #python 3 Time Complexity O(1)
