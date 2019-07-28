@@ -17,7 +17,7 @@ def find(x,y):
     kat=sorted(list(set(arr)))
     man=kat.index(x)
     
-    if man==len(arr)-1  or len(kat)==1:
+    if man==len(kat)-1  or len(kat)==1:
         print("no answer")
     else:
         print(kat[man+1])
