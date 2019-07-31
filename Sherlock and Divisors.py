@@ -5,11 +5,24 @@ https://www.hackerrank.com/challenges/sherlock-and-divisors/problem
 Watson gives an integer N  to Sherlock and asks him: 
 What is the number of divisors of N that are divisible by 2?.
 """
+# Time Complexity O(N)
+
+n=int(input())
+for i in range(n):
+    num=int(input())
+    count=0
+    for i in range(1,(num//2)+1):
+        if num%i==0 and i%2==0:
+            
+            count+=1
+    if num%2==0:
+        count+=1
+    print(count)
 
 
+# Time Complexity  O(n^(1/2))
 
 import math
-
 
 def divisors(n):
     count = 0
