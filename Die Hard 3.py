@@ -1,7 +1,10 @@
 """
 https://www.hackerrank.com/challenges/die-hard-3/problem
 """
-
+"""
+Given 2 jugs of capacity a and b gallons, and an infinite supply of water. 
+Can you fill one of the jugs with exactly c gallons of water ?
+"""
 
 import math
 
